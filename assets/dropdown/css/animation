@@ -1,0 +1,14 @@
+p{
+  color: Black; 
+  font-family: "Rubik";
+  font-size: 24.2243px;
+  margin: 8px 0 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 7s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
