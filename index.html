@@ -34,14 +34,14 @@ click to view ">
     var backwards = false;
 
     function typeWriter() {
-        let speed = 300;
+        let speed = 400;
         if (i < txt.length && !backwards) {
           txtView += txt.charAt(i)
           document.getElementById("name-type").innerHTML = txtView;
           i++;
         } else if(i === txt.length && !backwards) {
           backwards = true;
-          speed = 900;
+          speed = 1200;
         } else if(i === 0 && backwards) {
           backwards = false;
         } else {
