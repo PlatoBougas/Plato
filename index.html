@@ -31,16 +31,17 @@ click to view ">
     var i = 0;
     var txt = 'PLATO BOUGAS'; /* The text */
     var txtView = "";
-    var speed = 100; /* The speed/duration of the effect in milliseconds */
     var backwards = false;
 
     function typeWriter() {
+        let speed = 100;
         if (i < txt.length && !backwards) {
           txtView += txt.charAt(i)
           document.getElementById("name-type").innerHTML = txtView;
           i++;
         } else if(i === txt.length && !backwards) {
           backwards = true;
+          speed = 500;
         } else if(i === 0 && backwards) {
           backwards = false;
         } else {
